@@ -1,0 +1,120 @@
+package rechnungen;
+
+import javax.swing.JOptionPane;
+import javax.swing.plaf.basic.BasicBorders.RadioButtonBorder;
+
+public class Rechnungen {
+
+	public static void main(String[] args) {
+		/*
+		//Ü1
+		Bruch b  = new Bruch();
+		b.zaehler = 3;
+		b.nenner = 4;
+		System.out.println("Bruch b = " + b.zaehler + "/" + b.nenner);
+		*/
+
+/*
+		//ü2
+		int x = 19;
+		Bruch b = new Bruch();
+		if (x < 10) {
+			
+			b.zaehler = 2;
+			b.nenner = 3;
+			}
+			System.out.println("Bruch b = " + b.zaehler + "/" + b.nenner);
+*/
+
+/*
+		//Ü3
+		Bruch b  = new Bruch();
+		b.zaehler = 12;
+		b.nenner = 4;
+		//System.out.println("Bruch b = " + b.zaehler + "/" + b.nenner);
+
+		b.kuerzen();
+		b.ausgabeHoefflich();
+/*
+		b.ausgabe();
+		System.out.println();
+		b.ausgabeKurz();
+
+		int i = 1;
+		for(i=1;i < 20; i++){
+			b.zaehler = i;
+			b.ausgabeKurz();
+		}
+		
+		b.ausgabeHoefflich();
+*/		
+
+/*
+		b.kuerzen();
+		b.ausgabeHoefflich();
+		b.dezimalBruchAusgabe();
+		b.dezimalBruchAusgabeX();
+		b.dezimalBruchAusgabe1();
+		b.dezimalBruchAusgabeP();
+ */
+/*
+		Bruch b  = new Bruch();
+		b.zaehler = 18;
+		b.nenner = 12;
+
+		b.ausgabe();
+		b.erweitern(10);
+		b.ausgabe();
+		b.kuerzen();
+		b.ausgabeHoefflich();
+*/
+
+/*		String eingabe;
+		KreisU1 k = new KreisU1();
+		eingabe = JOptionPane.showInputDialog("Radius Eingabe: ");
+		k.radius = Double.parseDouble(eingabe);
+*/
+		
+		RechteckU1 r = new RechteckU1();
+/*		eingabe = JOptionPane.showInputDialog("Länge Eingabe: ");
+		r.laenge = Double.parseDouble(eingabe);
+		eingabe = JOptionPane.showInputDialog("Breite Eingabe: ");
+		r.breite = Double.parseDouble(eingabe);
+*/		
+		r.laenge = r.eingabeLaenge(r.laenge);
+		r.breite = r.eingabeBreite(r.breite);
+		r.printDFUKL(r.laenge, r.breite);
+		r.eingabeBreiteMinus(r.breite);
+		r.printDFUKL(r.laenge, r.breite);
+		r.eingabeBreitePlus(r.breite);
+		r.printDFUKL(r.laenge, r.breite);
+		r.eingabeLaengeMinus(r.laenge);
+		r.printDFUKL(r.laenge, r.breite);
+		r.eingabeLaengePlus(r.laenge);
+		r.printDFUKL(r.laenge, r.breite);
+		
+
+		KreisU1 k = new KreisU1();
+		k.radius = k.eingabeRadius(k.radius);
+		k.setUmfang(k.umfang);
+		k.setFlaeche(k.flaeche);
+		k.kAusgabe1(k.radius);
+		
+
+/*		System.out.println("Fläche: "+(r.getFlaeche(r.laenge,r.breite))+"\n"+
+							"Umfang: "+(r.getUmfang(r.laenge,r.breite))+"\n"+
+							"Lange Seite: "+(r.getLangeSeite(r.laenge,r.breite))+"\n"+
+							"Kurze Seite: "+(r.getKurzeSeite(r.laenge,r.breite))+"\n"+
+							"Diagonale: "+(r.getDiagonale(r.laenge,r.breite))+"\n"
+						);
+*/		
+		//länge oder  breiten verlängerung/verkürzen
+		//eingabe = JOptionPane.showInputDialog("Länge Eingabe: ");
+		//r.laenge = Double.parseDouble(eingabe);
+		//eingabe = JOptionPane.showInputDialog("Breite Eingabe: ");
+		//r.breite = Double.parseDouble(eingabe);
+						
+
+	}
+
+}
